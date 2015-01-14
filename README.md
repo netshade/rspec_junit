@@ -103,3 +103,8 @@ one I originally came up with
 * Thanks to [@dchamb84](https://github.com/dchamb84) for helping me debug the original hack
 * Thanks to [@nathanbain](https://github.com/nathanbain) for spurring me on to write the original hack
 
+--
+
+Design Notes
+
+The gem [isn't compliant](http://www.freeformatter.com/xml-validator-xsd.html) with the [junit-4.xsd](https://svn.jenkins-ci.org/trunk/hudson/dtkit/dtkit-format/dtkit-junit-model/src/main/resources/com/thalesgroup/dtkit/junit/model/xsd/junit-4.xsd). Additional properties are added that aren't in the junit xsd.
