@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'yarjuf/version'
 
 Gem::Specification.new do |gem|
-  gem.name        = 'yarjuf'
+  gem.name        = 'rspec_junit'
   gem.version     = Yarjuf::VERSION
   gem.platform    = Gem::Platform::RUBY
   gem.authors     = ['Nat Ritmeyer', 'Ben Snape']
