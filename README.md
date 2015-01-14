@@ -1,8 +1,8 @@
-# yarjuf
+# rspec_junit
 
-_Yet Another RSpec JUnit Formatter_
+A fork of [yarjuf](https://github.com/natritmeyer/yarjuf) containing additional features and bug fixes.
 
-[![Build Status](https://travis-ci.org/natritmeyer/yarjuf.png)](https://travis-ci.org/natritmeyer/yarjuf)
+[![Build Status](https://travis-ci.org/bootstraponline/rspec_junit.png)](https://travis-ci.org/bootstraponline/rspec_junit)
 
 ## Intro
 
