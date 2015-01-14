@@ -1,9 +1,9 @@
 language: ruby
 rvm:
-  - 2.0.0
-  - 2.1.5
-gemfile:
-  - Gemfile
-branches:
-  only:
-    - master
+  - 2.2
+  - 2.1
+  - 2.0
+notifications:
+  email:
+    on_success: never
+    on_failure: never
