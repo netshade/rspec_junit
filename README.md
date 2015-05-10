@@ -3,6 +3,11 @@
 A fork of [yarjuf](https://github.com/natritmeyer/yarjuf) containing additional features and bug fixes.
 Another popular junit formatter is [rspec_junit_formatter](https://github.com/sj26/rspec_junit_formatter).
 
+Changes from upstream:
+
+- [Record location information](https://github.com/natritmeyer/yarjuf/pull/18) for per file performance measurement
+
+
 ## Intro
 
 I've never found a gem that can be relied on to generate JUnit
