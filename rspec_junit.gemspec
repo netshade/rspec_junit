@@ -5,11 +5,11 @@ require 'yarjuf/version'
 
 Gem::Specification.new do |gem|
   gem.name        = 'rspec_junit'
-  gem.version     = Yarjuf::VERSION
+  gem.version     = RSpecJUnit::VERSION
   gem.platform    = Gem::Platform::RUBY
   gem.authors     = ['Nat Ritmeyer', 'Ben Snape']
   gem.email       = ['nat@natontesting.com']
-  gem.homepage    = 'http://github.com/natritmeyer/yarjuf'
+  gem.homepage    = 'http://github.com/bootstraponline/rspec_junit'
   gem.summary     = 'Yet Another RSpec JUnit Formatter (for Hudson/Jenkins)'
   gem.description = 'Yet Another RSpec JUnit Formatter (for Hudson/Jenkins)'
 

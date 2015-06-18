@@ -1,6 +1,8 @@
 require 'bundler/gem_tasks'
 require 'cucumber/rake/task'
 require 'rspec/core/rake_task'
+require 'coveralls/rake/task'
+Coveralls::RakeTask.new
 
 namespace :cuke do
   Cucumber::Rake::Task.new(:all) do |t|
@@ -19,5 +21,5 @@ namespace :spec do
   end
 end
 
-task :default => ['spec:all', 'cuke:all']
+task :default => ['spec:all', 'cuke:all', 'coveralls:push']
 

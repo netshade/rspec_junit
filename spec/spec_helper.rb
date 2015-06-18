@@ -1,2 +1,2 @@
-require 'yarjuf'
+require_relative '../lib/rspec_junit'
 

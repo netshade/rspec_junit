@@ -5,5 +5,5 @@ require 'rspec/core'
 require 'rspec/core/formatters'
 
 # internal dependencies
-require 'yarjuf/j_unit'
-require 'yarjuf/version'
+require 'rspec_junit/j_unit'
+require 'rspec_junit/version'
