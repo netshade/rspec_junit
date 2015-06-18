@@ -1,6 +1,7 @@
 describe JUnit do
   context 'interface conformity' do
-    subject { RSpecJUnit.new 'some output' }
+
+    subject { JUnit.new 'some output' }
 
     it 'should respond to example passed' do
       should respond_to :example_passed
