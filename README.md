@@ -1,4 +1,7 @@
-# rspec_junit [![Gem Version](https://badge.fury.io/rb/rspec_junit.svg)](https://rubygems.org/gems/rspec_junit)[![Build Status](https://travis-ci.org/bootstraponline/rspec_junit.svg)](https://travis-ci.org/bootstraponline/rspec_junit)[![Dependency Status](https://gemnasium.com/bootstraponline/rspec_junit.svg)](https://gemnasium.com/bootstraponline/rspec_junit)
+# rspec_junit 
+[![Gem Version](https://badge.fury.io/rb/rspec_junit.svg)](https://rubygems.org/gems/rspec_junit)
+[![Build Status](https://travis-ci.org/bootstraponline/rspec_junit.svg)](https://travis-ci.org/bootstraponline/rspec_junit)[![Dependency Status](https://gemnasium.com/bootstraponline/rspec_junit.svg)](https://gemnasium.com/bootstraponline/rspec_junit)
+[![Coverage Status](https://coveralls.io/repos/bootstraponline/rspec_junit/badge.svg?nocache)](https://coveralls.io/r/bootstraponline/rspec_junit)
 
 A fork of [yarjuf](https://github.com/natritmeyer/yarjuf) containing additional features and bug fixes.
 Another popular junit formatter is [rspec_junit_formatter](https://github.com/sj26/rspec_junit_formatter).
