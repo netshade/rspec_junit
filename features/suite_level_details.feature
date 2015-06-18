@@ -12,7 +12,7 @@ Feature: Suite Summary
         end
       end
       """
-    When I run `rspec spec/suite_element_spec.rb -r ../../lib/yarjuf -f JUnit -o results.xml`
+    When I run `rspec spec/suite_element_spec.rb -r ../../lib/rspec_junit -f JUnit -o results.xml`
     Then the junit output contains the testsuite element
 
   Scenario: One passing test
@@ -24,7 +24,7 @@ Feature: Suite Summary
         end
       end
       """
-    When I run `rspec spec/one_passing_test_spec.rb -r ../../lib/yarjuf -f JUnit -o results.xml`
+    When I run `rspec spec/one_passing_test_spec.rb -r ../../lib/rspec_junit -f JUnit -o results.xml`
     Then the junit output reports one passing test
 
   Scenario: One failing test
@@ -36,7 +36,7 @@ Feature: Suite Summary
         end
       end
       """
-    When I run `rspec spec/one_failing_test_spec.rb -r ../../lib/yarjuf -f JUnit -o results.xml`
+    When I run `rspec spec/one_failing_test_spec.rb -r ../../lib/rspec_junit -f JUnit -o results.xml`
     Then the junit output reports one failing test
 
   Scenario: One pending test
@@ -49,7 +49,7 @@ Feature: Suite Summary
         end
       end
       """
-    When I run `rspec spec/one_pending_test_spec.rb -r ../../lib/yarjuf -f JUnit -o results.xml`
+    When I run `rspec spec/one_pending_test_spec.rb -r ../../lib/rspec_junit -f JUnit -o results.xml`
     Then the junit output reports one pending test
 
   Scenario: Test suite duration
@@ -61,7 +61,7 @@ Feature: Suite Summary
         end
       end
       """
-    When I run `rspec spec/suite_duration_spec.rb -r ../../lib/yarjuf -f JUnit -o results.xml`
+    When I run `rspec spec/suite_duration_spec.rb -r ../../lib/rspec_junit -f JUnit -o results.xml`
     Then the junit output testsuite element contains a duration
 
   Scenario: Test suite time stamp
@@ -73,6 +73,6 @@ Feature: Suite Summary
         end
       end
       """
-    When I run `rspec spec/suite_timestamp_spec.rb -r ../../lib/yarjuf -f JUnit -o results.xml`
+    When I run `rspec spec/suite_timestamp_spec.rb -r ../../lib/rspec_junit -f JUnit -o results.xml`
     Then the junit output testsuite element contains a timestamp
 
