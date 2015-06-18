@@ -2,7 +2,7 @@ require_relative 'lib/rspec_junit/version'
 
 Gem::Specification.new do |gem|
   gem.name        = 'rspec_junit'
-  gem.version     = RSpecJUnit::VERSION
+  gem.version     = RspecJunit::VERSION
   gem.platform    = Gem::Platform::RUBY
   gem.authors     = ['Nat Ritmeyer', 'Ben Snape']
   gem.email       = ['nat@natontesting.com']

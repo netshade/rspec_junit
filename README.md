@@ -1,7 +1,7 @@
 # rspec_junit 
 [![Gem Version](https://badge.fury.io/rb/rspec_junit.svg)](https://rubygems.org/gems/rspec_junit)
 [![Build Status](https://travis-ci.org/bootstraponline/rspec_junit.svg)](https://travis-ci.org/bootstraponline/rspec_junit)[![Dependency Status](https://gemnasium.com/bootstraponline/rspec_junit.svg)](https://gemnasium.com/bootstraponline/rspec_junit)
-[![Coverage Status](https://coveralls.io/repos/bootstraponline/rspec_junit/badge.svg?nocache)](https://coveralls.io/r/bootstraponline/rspec_junit)
+[![Coverage Status](https://coveralls.io/repos/bootstraponline/rspec_junit/badge.svg?nocache2)](https://coveralls.io/r/bootstraponline/rspec_junit)
 
 A fork of [yarjuf](https://github.com/natritmeyer/yarjuf) containing additional features and bug fixes.
 Another popular junit formatter is [rspec_junit_formatter](https://github.com/sj26/rspec_junit_formatter).
@@ -11,10 +11,12 @@ Another popular junit formatter is [rspec_junit_formatter](https://github.com/sj
 Changes from upstream:
 
 - [Record location information](https://github.com/natritmeyer/yarjuf/pull/18) for per file performance measurement
-
+- Coveralls setup on Travis CI (100% coverage)
+- Renamed to rspec_junit instead of yarjuf               
+               
 Usage:
 
-- `require 'yarjuf'`
+- `require 'rspec_junit'`
 
 --
 
@@ -30,22 +32,22 @@ distributable as a gem. Thus: [yet-another-rspec-junit-formatter](https://github
 
 Using rubygems:
 
-`gem install yarjuf`
+`gem install rspec_junit`
 
 Using bundler:
 
 Add the following line to your `Gemfile`:
 
-`gem 'yarjuf'`
+`gem 'rspec_junit'`
  
 ## Usage
 
 There are a few ways to use custom formatters in RSpec; what follows is
 the 'best' way...
 
-### Loading yarjuf
+### Loading rspec_junit
 
-Before you can use yarjuf, RSpec needs to know about it. The best way to
+Before you can use rspec_junit, RSpec needs to know about it. The best way to
 do that is to use the functionality that RSpec provides to load
 libraries. 
 
@@ -65,16 +67,16 @@ required when RSpec starts.
 Add the following to your `spec/spec_helper.rb`:
 
 ```ruby
-require 'yarjuf'
+require 'rspec_junit'
 ```
 
-That will make sure that yarjuf is loaded when RSpec starts and can be
+That will make sure that rspec_junit is loaded when RSpec starts and can be
 used as a formatter.
 
-### Generating JUnit output using yarjuf
+### Generating JUnit output using rspec_junit
 
 RSpec tests can be executed in a number of ways. Here's how to get JUnit
-output for each of those different ways - assuming you've loaded yarjuf
+output for each of those different ways - assuming you've loaded rspec_junit
 as specified above).
 
 #### Running rspec tests from the command line
@@ -103,7 +105,7 @@ That will write out JUnit formatted results to a file called
 
 #### Jenkins integration
 
-To use yarjuf with Jenkins(/Hudson), simply tick the 'Publish JUnit test
+To use rspec_junit with Jenkins(/Hudson), simply tick the 'Publish JUnit test
 result report' option in the Jenkins task configuration page and in the
 'Test report XMLs' field specify the file name that you expect the JUnit
 formatted results to be written to, ie: the file path and name specified

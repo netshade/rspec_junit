@@ -1,3 +1,3 @@
-module RSpecJUnit
-  VERSION = '2.0.1'
+module RspecJunit
+  VERSION = '3.0.0'
 end
