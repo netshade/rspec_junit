@@ -1,3 +1,5 @@
+require_relative 'spec_helper'
+
 describe JUnit do
   context 'interface conformity' do
 

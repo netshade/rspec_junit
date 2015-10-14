@@ -1,3 +1,4 @@
+require_relative 'spec_helper'
 require_relative '../lib/rspec_junit/merged_xml'
 require_relative 'fake_foreach_patch'
 

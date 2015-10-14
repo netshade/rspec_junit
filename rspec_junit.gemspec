@@ -24,7 +24,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency('nokogiri', '~> 1.6.6.2') # for Ruby 1.8.7
   gem.add_development_dependency('cucumber', '~> 1.3.16')
   gem.add_development_dependency('aruba', '~> 0.6.0')
-  gem.add_development_dependency('coveralls', '~> 0.8.1')
+  gem.add_development_dependency('coveralls', '~> 0.8.3')
   gem.add_development_dependency('reek', ['= 1.3.7']) # for Ruby 1.8.7
   gem.add_development_dependency('rainbow', '~> 1.99.2') # for Ruby 1.8.7
 end
