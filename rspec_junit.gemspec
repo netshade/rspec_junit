@@ -3,7 +3,6 @@ require_relative 'lib/rspec_junit/version'
 Gem::Specification.new do |gem|
   gem.name        = 'rspec_junit'
   gem.version     = RspecJunit::VERSION
-  gem.platform    = Gem::Platform::RUBY
   gem.authors     = ['Nat Ritmeyer', 'Ben Snape']
   gem.email       = ['nat@natontesting.com']
   gem.homepage    = 'http://github.com/bootstraponline/rspec_junit'
@@ -18,8 +17,10 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency('rspec', '>= 3.3.0')
   gem.add_runtime_dependency('builder', '>= 3.2.2')
 
-  gem.add_development_dependency('nokogiri', '~> 1.5.10') # for Ruby 1.8.7
-  gem.add_development_dependency('rake', '~> 10.3.2')
+
+  gem.add_development_dependency('rubocop', '~> 0.34.2')
+  gem.add_development_dependency('appium_thor', '~> 1.0.1')
+  gem.add_development_dependency('nokogiri', '~> 1.6.6.2') # for Ruby 1.8.7
   gem.add_development_dependency('cucumber', '~> 1.3.16')
   gem.add_development_dependency('aruba', '~> 0.6.0')
   gem.add_development_dependency('coveralls', '~> 0.8.1')
