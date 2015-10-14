@@ -23,6 +23,12 @@ class ::Default < Thor
     exec 'bundle exec cucumber -f progress'
   end
 
+  desc 'cover', 'Push coverage results to coveralls'
+  def cover
+    require 'coveralls'
+    Coveralls.push!
+  end
+
   # so many errors.
   desc 'cop', 'Execute rubocop'
   def cop
