@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="1" time="13.316234" timestamp="2015-10-14T12:41:54-04:00">
+  <testsuite location="./spec/sign_in_spec.rb:3" name="Sign in page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Sign in page loads successfully&#10;     Chrome 45 - Windows 8.1" time="13.257916" location="./spec/sign_in_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="1" time="14.566535" timestamp="2015-10-14T12:41:56-04:00">
+  <testsuite location="./spec/sharing_spec.rb:3" name="Sharing page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Sharing page loads successfully&#10;     Internet explorer 10 - Windows 8" time="14.514622" location="./spec/sharing_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="1" time="15.865658" timestamp="2015-10-14T12:41:57-04:00">
+  <testsuite location="./spec/sharing_spec.rb:3" name="Sharing page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Sharing page loads successfully&#10;     Firefox 41 - Windows 8.1" time="15.815628" location="./spec/sharing_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="1" time="16.346295" timestamp="2015-10-14T12:41:58-04:00">
+  <testsuite location="./spec/sign_in_spec.rb:3" name="Sign in page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Sign in page loads successfully&#10;     Firefox 41 - Windows 8.1" time="16.286686" location="./spec/sign_in_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="1" time="16.446286" timestamp="2015-10-14T12:41:58-04:00">
+  <testsuite location="./spec/sign_in_spec.rb:3" name="Sign in page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Sign in page loads successfully&#10;     Internet explorer 11 - Windows 10" time="16.378335" location="./spec/sign_in_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="1" time="16.75357" timestamp="2015-10-14T12:41:58-04:00">
+  <testsuite location="./spec/reset_password_spec.rb:3" name="Reset password page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Reset password page loads successfully&#10;     Internet explorer 11 - Windows 10" time="16.709697" location="./spec/reset_password_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="1" time="17.738474" timestamp="2015-10-14T12:41:59-04:00">
+  <testsuite location="./spec/sharing_spec.rb:3" name="Sharing page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Sharing page loads successfully&#10;     Internet explorer 11 - Windows 10" time="17.679808" location="./spec/sharing_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="1" time="19.017519" timestamp="2015-10-14T12:42:00-04:00">
+  <testsuite location="./spec/reset_password_spec.rb:3" name="Reset password page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Reset password page loads successfully&#10;     Safari 8.1 - Mac 10.11" time="18.976598" location="./spec/reset_password_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="1" time="19.681179" timestamp="2015-10-14T12:42:01-04:00">
+  <testsuite location="./spec/sharing_spec.rb:3" name="Sharing page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Sharing page loads successfully&#10;     Safari 8.1 - Mac 10.11" time="19.631504" location="./spec/sharing_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="1" time="20.914578" timestamp="2015-10-14T12:42:02-04:00">
+  <testsuite location="./spec/sign_in_spec.rb:3" name="Sign in page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Sign in page loads successfully&#10;     Safari 8.1 - Mac 10.11" time="20.853925" location="./spec/sign_in_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="2" time="22.016006" timestamp="2015-10-14T12:42:03-04:00">
+  <testsuite location="./spec/reset_password_spec.rb:3" name="Reset password page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Reset password page loads successfully&#10;     Internet explorer 10 - Windows 8" time="11.808956" location="./spec/reset_password_spec.rb:4">
+    </testcase>
+  </testsuite>
+  <testsuite location="./spec/welcome_spec.rb:3" name="Welcome page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Welcome page loads successfully&#10;     Chrome 45 - Windows 8.1" time="10.164598" location="./spec/welcome_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="2" time="24.141019" timestamp="2015-10-14T12:42:05-04:00">
+  <testsuite location="./spec/sign_in_spec.rb:3" name="Sign in page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Sign in page loads successfully&#10;     Internet explorer 10 - Windows 8" time="12.801699" location="./spec/sign_in_spec.rb:4">
+    </testcase>
+  </testsuite>
+  <testsuite location="./spec/welcome_spec.rb:3" name="Welcome page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Welcome page loads successfully&#10;     Internet explorer 10 - Windows 8" time="11.27141" location="./spec/welcome_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="2" time="24.280599" timestamp="2015-10-14T12:42:05-04:00">
+  <testsuite location="./spec/reset_password_spec.rb:3" name="Reset password page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Reset password page loads successfully&#10;     Chrome 45 - Windows 8.1" time="8.967452" location="./spec/reset_password_spec.rb:4">
+    </testcase>
+  </testsuite>
+  <testsuite location="./spec/welcome_spec.rb:3" name="Welcome page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Welcome page loads successfully&#10;     Firefox 41 - Windows 8.1" time="15.271002" location="./spec/welcome_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="2" time="27.012117" timestamp="2015-10-14T12:42:08-04:00">
+  <testsuite location="./spec/reset_password_spec.rb:3" name="Reset password page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Reset password page loads successfully&#10;     Firefox 41 - Windows 8.1" time="13.097038" location="./spec/reset_password_spec.rb:4">
+    </testcase>
+  </testsuite>
+  <testsuite location="./spec/welcome_spec.rb:3" name="Welcome page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Welcome page loads successfully&#10;     Internet explorer 11 - Windows 10" time="13.818436" location="./spec/welcome_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="2" time="31.558378" timestamp="2015-10-14T12:42:13-04:00">
+  <testsuite location="./spec/sharing_spec.rb:3" name="Sharing page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Sharing page loads successfully&#10;     Chrome 45 - Windows 8.1" time="11.919954" location="./spec/sharing_spec.rb:4">
+    </testcase>
+  </testsuite>
+  <testsuite location="./spec/welcome_spec.rb:3" name="Welcome page" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Welcome page loads successfully&#10;     Safari 8.1 - Mac 10.11" time="19.585464" location="./spec/welcome_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="1" time="43.214236" timestamp="2015-10-14T12:42:24-04:00">
+  <testsuite location="./spec/promos_spec.rb:3" name="Promos" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Promos each promo has the expected data&#10;     Chrome 45 - Windows 8.1" time="43.182716" location="./spec/promos_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="1" time="49.623575" timestamp="2015-10-14T12:42:31-04:00">
+  <testsuite location="./spec/promos_spec.rb:3" name="Promos" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Promos each promo has the expected data&#10;     Internet explorer 10 - Windows 8" time="49.593516" location="./spec/promos_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="1" time="50.735702" timestamp="2015-10-14T12:42:32-04:00">
+  <testsuite location="./spec/promos_spec.rb:3" name="Promos" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Promos each promo has the expected data&#10;     Firefox 41 - Windows 8.1" time="50.704113" location="./spec/promos_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="1" time="64.238108" timestamp="2015-10-14T12:42:45-04:00">
+  <testsuite location="./spec/promos_spec.rb:3" name="Promos" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Promos each promo has the expected data&#10;     Safari 8.1 - Mac 10.11" time="64.207364" location="./spec/promos_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites errors="0" failures="0" skipped="0" tests="1" time="69.52873" timestamp="2015-10-14T12:42:51-04:00">
+  <testsuite location="./spec/promos_spec.rb:3" name="Promos" tests="1" errors="0" failures="0" skipped="0">
+    <properties/>
+    <testcase name="Promos each promo has the expected data&#10;     Internet explorer 11 - Windows 10" time="69.49698" location="./spec/promos_spec.rb:4">
+    </testcase>
+  </testsuite>
+</testsuites>

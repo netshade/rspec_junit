@@ -17,7 +17,8 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency('rspec', '>= 3.3.0')
   gem.add_runtime_dependency('builder', '>= 3.2.2')
 
-
+  gem.add_development_dependency('pry', '~> 0.10.2')
+  gem.add_development_dependency('fakefs', '~> 0.6.7')
   gem.add_development_dependency('rubocop', '~> 0.34.2')
   gem.add_development_dependency('appium_thor', '~> 1.0.1')
   gem.add_development_dependency('nokogiri', '~> 1.6.6.2') # for Ruby 1.8.7
