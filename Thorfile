@@ -18,13 +18,13 @@ class ::Default < Thor
     exec 'bundle exec rspec spec'
   end
 
-  desc 'cuke', 'Run cucumber test'
+  desc 'cuke', 'Run cucumber tests'
   def cuke
     exec 'bundle exec cucumber -f progress'
   end
 
   # so many errors.
-  desc 'cop', 'Executes rubocop'
+  desc 'cop', 'Execute rubocop'
   def cop
     exec 'bundle exec rubocop --display-cop-names'
   end
