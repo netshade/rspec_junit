@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/rspec_junit/merged_xml'
+
+fail 'Usage: rspec_junit_split path/to/merged.xml' unless ARGV.length == 1
+
+RspecJunit::MergedXml.new(ARGV.first).split
