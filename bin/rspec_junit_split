@@ -1,7 +1,14 @@
 #!/usr/bin/env ruby
 
+#
+# Split merged.xml into individual xml files then delete the merged xml.
+#
+
 require_relative '../lib/rspec_junit/merged_xml'
 
 fail 'Usage: rspec_junit_split path/to/merged.xml' unless ARGV.length == 1
+file = ARGV.first
+fail "Invalid path to file: #{file}" unless File.exist?(file) && File.file?(file)
 
-RspecJunit::MergedXml.new(ARGV.first).split
+RspecJunit::MergedXml.new(file).split
+File.delete file if File.exist?(file)
