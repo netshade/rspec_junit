@@ -1,9 +1,9 @@
 # An RSpec formatter for generating results in JUnit format
-class JUnit
+class JUnit < RSpec::Core::Formatters::BaseFormatter
   RSpec::Core::Formatters.register self, :example_passed, :example_failed, :example_pending, :dump_summary
 
   def initialize(output)
-    @output             = output
+    super
     @test_suite_results = {}
     @builder            = Builder::XmlMarkup.new :indent => 2
   end
