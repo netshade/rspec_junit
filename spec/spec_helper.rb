@@ -2,5 +2,6 @@ require 'rubygems'
 require 'rspec'
 require_relative '../lib/rspec_junit'
 
+require 'simplecov'
 require 'coveralls'
-Coveralls.wear!
+SimpleCov.start { add_filter 'spec/' }
