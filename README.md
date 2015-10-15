@@ -18,6 +18,15 @@ Usage:
 
 - `require 'rspec_junit'`
 
+
+```
+$ cat .rspec
+--require rspec_junit
+--format documentation
+--format JUnit
+--out ./junit/junit_<%= Process.pid %>.xml
+```
+
 --
 
 ## Intro
