@@ -19,12 +19,16 @@ Usage:
 - `require 'rspec_junit'`
 
 
-```
-$ cat .rspec
---require rspec_junit
---format documentation
---format JUnit
---out ./junit/junit_<%= Process.pid %>.xml
+```ruby
+# spec_helper.rb
+RSpec.configure do |config|
+  config.before(:suite) do
+    # Must register the formatter here and not in an options file. The options
+    # file uses the master process pid and globs all the xml files into one
+    # instead of the worker pids which output to individual files.
+    config.add_formatter JUnit, "junit_#{Process.pid}.xml"
+  end
+end
 ```
 
 --
