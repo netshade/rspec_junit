@@ -14,11 +14,11 @@ Feature: Basic use of Yarjuf
       """
 
   Scenario: Requiring Yarjuf
-    When I run `rspec spec/basic_spec.rb -r ../../lib/rspec_junit -f JUnit`
+    When I run `rspec spec/basic_spec.rb -r ../../lib/rspec_junit -f RSpecJUnit`
     Then the exit status should be 0
 
   Scenario: Writing output to a file
-    When I run `rspec spec/basic_spec.rb -r ../../lib/rspec_junit -f JUnit -o results.xml`
+    When I run `rspec spec/basic_spec.rb -r ../../lib/rspec_junit -f RSpecJUnit -o results.xml`
     Then the exit status should be 0
     And a file named "results.xml" should exist
 

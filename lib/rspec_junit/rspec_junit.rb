@@ -42,7 +42,7 @@ class RSpecJUnit < RSpec::Core::Formatters::BaseFormatter
   protected
 
   def add_to_test_suite_results(example_notification)
-    suite_name                      = JUnit.root_group_name_for example_notification
+    suite_name                      = RSpecJUnit.root_group_name_for example_notification
     @test_suite_results[suite_name] = [] unless @test_suite_results.keys.include? suite_name
     @test_suite_results[suite_name] << example_notification.example
   end
@@ -55,7 +55,11 @@ class RSpecJUnit < RSpec::Core::Formatters::BaseFormatter
       backtrace = RSpec::Core::BacktraceFormatter.new.format_backtrace exception.backtrace
       backtrace = "\n#{backtrace.join("\n")}"
     end
-    "\n#{exception.class.name}\n#{exception.message}#{backtrace}"
+    sauce_test_link = example.metadata[:sauce_test_link]
+
+    result = "\n#{exception.class.name}\n#{exception.message}#{backtrace}"
+    result += "\n\n#{sauce_test_link}" if sauce_test_link
+    result
   end
 
   # utility methods
@@ -90,8 +94,8 @@ class RSpecJUnit < RSpec::Core::Formatters::BaseFormatter
   end
 
   def build_test_suite(suite_name, tests)
-    failure_count = JUnit.count_in_suite_of_type(tests, :failed)
-    skipped_count = JUnit.count_in_suite_of_type(tests, :pending)
+    failure_count = RSpecJUnit.count_in_suite_of_type(tests, :failed)
+    skipped_count = RSpecJUnit.count_in_suite_of_type(tests, :pending)
 
     @builder.testsuite(
       location: tests.first.example_group.location,

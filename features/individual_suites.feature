@@ -20,7 +20,7 @@ Feature: Individual suites
         end
       end
       """
-    When I run `rspec spec/suite_one_spec.rb spec/suite_two_spec.rb -r ../../lib/rspec_junit -f JUnit -o results.xml`
+    When I run `rspec spec/suite_one_spec.rb spec/suite_two_spec.rb -r ../../lib/rspec_junit -f RSpecJUnit -o results.xml`
     Then the junit output file contains two testsuite elements named 'suite one' and 'suite two'
     And the junit output file has one test against each suite
 
@@ -76,7 +76,7 @@ Feature: Individual suites
         end
       end
       """
-    When I run `rspec spec/suite_one_spec.rb spec/suite_two_spec.rb -r ../../lib/rspec_junit -f JUnit -o results.xml`
+    When I run `rspec spec/suite_one_spec.rb spec/suite_two_spec.rb -r ../../lib/rspec_junit -f RSpecJUnit -o results.xml`
     Then the junit output file contains two testsuite elements named 'suite one' and 'suite two'
     And the junit output file has the correct test counts against each suite
 

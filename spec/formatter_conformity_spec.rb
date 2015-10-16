@@ -1,9 +1,9 @@
 require_relative 'spec_helper'
 
-describe JUnit do
+describe RSpecJUnit do
   context 'interface conformity' do
 
-    subject { JUnit.new 'some output' }
+    subject { RSpecJUnit.new 'some output' }
 
     it 'should respond to example passed' do
       should respond_to :example_passed
