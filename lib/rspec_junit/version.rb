@@ -1,4 +1,4 @@
 module RspecJunit
-  VERSION = '3.0.4' unless defined? ::RspecJunit::VERSION
-  DATE    = '2015-10-15' unless defined? ::RspecJunit::DATE
+  VERSION = '4.0.0' unless defined? ::RspecJunit::VERSION
+  DATE    = '2015-10-16' unless defined? ::RspecJunit::DATE
 end
