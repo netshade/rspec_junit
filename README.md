@@ -6,32 +6,23 @@
 A fork of [yarjuf](https://github.com/natritmeyer/yarjuf) containing additional features and bug fixes.
 Another popular junit formatter is [rspec_junit_formatter](https://github.com/sj26/rspec_junit_formatter).
 
---
-
-Changes from upstream:
-
-- [Record location information](https://github.com/natritmeyer/yarjuf/pull/18) for per file performance measurement
-- Coveralls setup on Travis CI (100% coverage)
-- Renamed to rspec_junit instead of yarjuf               
-               
-Usage:
-
-- `require 'rspec_junit'`
-
+## Usage
 
 ```ruby
 # spec_helper.rb
+require 'rspec_junit'
+
 RSpec.configure do |config|
   config.before(:suite) do
     # Must register the formatter here and not in an options file. The options
     # file uses the master process pid and globs all the xml files into one
     # instead of the worker pids which output to individual files.
-    config.add_formatter JUnit, "junit_#{Process.pid}.xml"
+    config.add_formatter RSpecJUnit, "junit_#{Process.pid}.xml"
   end
 end
 ```
 
-# Sauce Labs Jenkins notes
+## Sauce Labs Jenkins notes
 
 - If the values for `Job Name	OS/Browser	Pass/Fail	Job Links` aren't autopopulated, ensure that
   the Sauce username and API key have been provided to the Sauce Plugin. Under

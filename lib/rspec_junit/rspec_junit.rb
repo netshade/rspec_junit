@@ -1,6 +1,6 @@
 # RSpec formatter for generating results in JUnit format
 # Inherit from BaseFormatter like the JSON rspec-core formatter.
-class JUnit < RSpec::Core::Formatters::BaseFormatter
+class RSpecJUnit < RSpec::Core::Formatters::BaseFormatter
   RSpec::Core::Formatters.register self, :example_passed, :example_failed,
                                    :example_pending, :dump_summary,
                                    :close
