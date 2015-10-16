@@ -31,6 +31,16 @@ RSpec.configure do |config|
 end
 ```
 
+# Sauce Labs Jenkins notes
+
+- If the values for `Job Name	OS/Browser	Pass/Fail	Job Links` aren't autopopulated, ensure that
+  the Sauce username and API key have been provided to the Sauce Plugin. Under
+  **Sauce Labs Options** in the job configure menu check `Override default authentication`
+  and then provide the user and access key.
+- If the JUnit results report doesn't auto link to Sauce Labs jobs, ensure that
+  the **Post-build Actions** lists **Publish JUnit test results report** as the first action
+  and that **Run Sauce Labs Test Publisher** is after the JUnit action.
+
 --
 
 ## Intro
