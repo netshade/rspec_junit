@@ -52,14 +52,15 @@ class RSpecJUnit < RSpec::Core::Formatters::BaseFormatter
     return '' if exception.nil?
     backtrace = ''
     if exception.backtrace # may be nil
-      backtrace = RSpec::Core::BacktraceFormatter.new.format_backtrace exception.backtrace
+      # Use the configured backtrace formatter instead of creating a new one.
+      backtrace = RSpec.configuration.backtrace_formatter.format_backtrace exception.backtrace
       backtrace = "\n#{backtrace.join("\n")}"
     end
     sauce_test_link = example.metadata[:sauce_test_link]
 
-    result = "\n#{exception.class.name}\n#{exception.message}#{backtrace}"
-    result += "\n\n#{sauce_test_link}" if sauce_test_link
-    result
+    result = "\n#{exception.class.name}\n#{exception.message}"
+    result += "\n#{sauce_test_link}\n" if sauce_test_link
+    "#{result}#{backtrace}"
   end
 
   # utility methods
