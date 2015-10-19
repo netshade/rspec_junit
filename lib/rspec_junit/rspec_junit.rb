@@ -57,14 +57,13 @@ class RSpecJUnit < RSpec::Core::Formatters::BaseFormatter
       backtrace = "\n#{backtrace.join("\n")}"
     end
 
-    exception_message = exception.message || ''
-    sauce_test_link   = example.metadata[:sauce_test_link]
     # avoid duplicating the link if the message already contains it
     # this happens when SauceDocumentation is used.
-    sauce_test_link   = nil if exception_message.include?(sauce_test_link)
+    sauce_test_link = example.metadata[:sauce_test_link]
+    print_link      = sauce_test_link && !exception.message.include?(sauce_test_link)
 
-    result = "\n#{exception.class.name}\n#{exception_message}"
-    result += "\n#{sauce_test_link}\n" if sauce_test_link
+    result = "\n#{exception.class.name}\n#{exception.message}"
+    result += "\n#{sauce_test_link}\n" if print_link
     "#{result}#{backtrace}"
   end
 
