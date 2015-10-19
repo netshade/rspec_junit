@@ -60,9 +60,10 @@ class RSpecJUnit < RSpec::Core::Formatters::BaseFormatter
     # avoid duplicating the link if the message already contains it
     # this happens when SauceDocumentation is used.
     sauce_test_link = example.metadata[:sauce_test_link]
-    print_link      = sauce_test_link && !exception.message.include?(sauce_test_link)
+    message         = exception.message || ''
+    print_link      = sauce_test_link && !message.include?(sauce_test_link)
 
-    result = "\n#{exception.class.name}\n#{exception.message}"
+    result = "\n#{exception.class.name}\n#{message}"
     result += "\n#{sauce_test_link}\n" if print_link
     "#{result}#{backtrace}"
   end
