@@ -75,7 +75,7 @@ class RSpecJUnit < RSpec::Core::Formatters::BaseFormatter
   end
 
   def self.root_group_name_for(example_notification)
-    example_notification.example.metadata[:example_group][:description]
+    example_notification.example.metadata[:example_group][:full_description]
   end
 
   # methods to build the xml for test suites and individual tests
@@ -127,7 +127,7 @@ class RSpecJUnit < RSpec::Core::Formatters::BaseFormatter
     test_status    = test.metadata[:execution_result].status
     location       = test.location
 
-    @builder.testcase(name: test_name, time: execution_time, location: location) do
+    @builder.testcase(name: test_name, time: execution_time, location: location, id: test.id) do
       case test_status
         when :pending
           @builder.skipped
