@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
 
   gem.add_runtime_dependency('rspec', '>= 3.3.0')
-  gem.add_runtime_dependency('builder', '>= 3.2.2')
+  gem.add_runtime_dependency('builder', '~> 3.0.0')
 
   gem.add_development_dependency('pry', '~> 0.10.2')
   gem.add_development_dependency('fakefs', '~> 0.6.7')
