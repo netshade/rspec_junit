@@ -1,3 +1,4 @@
+require 'digest/md5'
 # RSpec formatter for generating results in JUnit format
 # Inherit from BaseFormatter like the JSON rspec-core formatter.
 class RSpecJUnit < RSpec::Core::Formatters::BaseFormatter
@@ -43,8 +44,10 @@ class RSpecJUnit < RSpec::Core::Formatters::BaseFormatter
 
   def add_to_test_suite_results(example_notification)
     suite_name                      = RSpecJUnit.root_group_name_for example_notification
-    @test_suite_results[suite_name] = [] unless @test_suite_results.keys.include? suite_name
-    @test_suite_results[suite_name] << example_notification.example
+    file_name                       = example_notification.example.example_group.id
+    key                             = [suite_name, file_name]
+    @test_suite_results[key]      ||= []
+    @test_suite_results[key]       << example_notification.example
   end
 
   def failure_details_for(example)
@@ -94,22 +97,50 @@ class RSpecJUnit < RSpec::Core::Formatters::BaseFormatter
   end
 
   def build_all_suites
-    @test_suite_results.each do |suite_name, tests|
-      build_test_suite(suite_name, tests)
+    @test_suite_results.each do |(suite_name, file_path), tests|
+      build_test_suite(suite_name, file_path, tests)
     end
   end
 
-  def build_test_suite(suite_name, tests)
+  def class_from_file_path(file_path)
+    components = file_path.split(/[\.\/\\]+/i).map(&:strip).compact.reject(&:empty?)
+    components.map do |component|
+      if component =~ /\[[^\]]+\]\Z/
+        index          = component.index("[")
+        if index
+          _, position = component[0..index - 1], component[index..-1]
+          identifiers = position.gsub(/[\[\]]/, "").split(":")
+          identifiers.map { |line| "line#{line}" }.join(".")
+        else
+          component.split(".")[0..-2].join(".")
+        end
+      elsif component =~/:\d+\Z/
+        file, position = component.split(":")
+        name_parts     = file.split(".")
+        "line#{position}"
+      else
+        if component.index(".")
+          component.split(".")[0..-2].join(".")
+        else
+          component
+        end
+      end
+    end.join(".")
+  end
+
+  def build_test_suite(suite_name, file_path, tests)
     failure_count = RSpecJUnit.count_in_suite_of_type(tests, :failed)
     skipped_count = RSpecJUnit.count_in_suite_of_type(tests, :pending)
 
     @builder.testsuite(
-      location: tests.first.example_group.location,
-      name:     suite_name,
-      tests:    tests.size,
-      errors:   0,
-      failures: failure_count,
-      skipped:  skipped_count) do
+                       location:  file_path,
+                       id:        Digest::MD5.hexdigest(file_path),
+                       name:      suite_name,
+                       classname: class_from_file_path(file_path),
+                       tests:     tests.size,
+                       errors:    0,
+                       failures:  failure_count,
+                       skipped:   skipped_count) do
       @builder.properties
       build_all_tests tests
     end
@@ -127,7 +158,7 @@ class RSpecJUnit < RSpec::Core::Formatters::BaseFormatter
     test_status    = test.metadata[:execution_result].status
     location       = test.location
 
-    @builder.testcase(name: test_name, time: execution_time, location: location, id: test.id) do
+    @builder.testcase(name: test_name, time: execution_time, location: test.id, id: Digest::MD5.hexdigest(test.id), classname: class_from_file_path(test.id)) do
       case test_status
         when :pending
           @builder.skipped
