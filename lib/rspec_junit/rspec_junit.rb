@@ -109,8 +109,7 @@ class RSpecJUnit < RSpec::Core::Formatters::BaseFormatter
         index          = component.index("[")
         if index
           _, position = component[0..index - 1], component[index..-1]
-          identifiers = position.gsub(/[\[\]]/, "").split(":")
-          identifiers.map { |line| "line#{line}" }.join(".")
+          "testId#{position}"
         else
           component.split(".")[0..-2].join(".")
         end
